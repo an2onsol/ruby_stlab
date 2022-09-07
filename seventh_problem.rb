@@ -1,8 +1,9 @@
 # Uses sieve of Eratosthenes to find prime number
 def find_prime(num)
   array = (0..num - 1).to_a
+  array[1] = 0
   prime = 2
-  i = 1
+  i = 0
 
   while i < num
     j = 2 * prime
@@ -28,11 +29,8 @@ def find_prime(num)
       i += 1
     end
   end
-  return prime
+
+  array.reject! {|x| x == 0 }
+  return array[num - 1]
 end
 
-puts find_prime(1)
-puts find_prime(5)
-puts find_prime(10)
-puts find_prime(20)
-puts find_prime(10001)
