@@ -10,5 +10,5 @@ def prime_factor(num)
       factor += 1
     end
   end
-  return factor
+  factor
 end
