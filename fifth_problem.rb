@@ -12,6 +12,5 @@ def smallest_multiple(first_num, second_num)
       i += 1
     end
   end
-  deviders.inject(1){ |result, n| result * n }
+  deviders.reduce(1, :*)
 end
-
