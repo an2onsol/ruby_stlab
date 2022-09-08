@@ -4,7 +4,7 @@ def even_fibonacci(arg)
   sum = 0
 
   while second <= arg
-    if second % 2 == 0
+    if second.even? == 0
       sum += second
     end
 
