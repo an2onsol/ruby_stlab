@@ -30,7 +30,6 @@ def find_prime(num)
     end
   end
 
-  array.reject! {|x| x == 0 }
+  array.reject! {|x| x.zero? }
   return array[num - 1]
 end
-
