@@ -20,7 +20,7 @@ def sum_of_primes(num)
 
     prime += 1
   end
-  return array.inject(0){ |result, elem| result + elem }
+  return array.reduce(:+)
 end
 
 puts sum_of_primes(10)
