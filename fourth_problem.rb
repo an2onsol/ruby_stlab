@@ -13,7 +13,7 @@ def largest_palindrome
     end
     a -= 1
   end
-  return max_palindrome
+  max_palindrome
 end
 
 puts largest_palindrome
