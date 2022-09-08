@@ -7,7 +7,7 @@ def largest_palindrome
     while b > 100
       m = a * b
       if m.to_s.reverse == m.to_s && m > max_palindrome
-          max_palindrome = m
+        max_palindrome = m
       end
       b -= 1
     end
