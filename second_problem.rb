@@ -10,7 +10,7 @@ def even_fibonacci(arg)
 
     first, second = second, first + second
   end
-  return sum
+  sum
 end
 
 puts even_fibonacci(4000000)
