@@ -1,9 +1,9 @@
 def smallest_multiple(first_num, second_num)
-  deviders = Array.new
+  deviders = []
 
   for num in (first_num..second_num)
     i = 1
-    deviders.each { |d| num /= d if num % d == 0}
+    deviders.each { |d| num /= d if num % d == 0 }
     while num != 1
       if num % i == 0
         num /= i
