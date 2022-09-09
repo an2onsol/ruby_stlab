@@ -1,17 +1,19 @@
+MAX_THREE_DIGIT = 999
+
 def largest_palindrome
-  a = 999
+  first_factor = MAX_THREE_DIGIT
   max_palindrome = 0
 
-  while a > 100
-    b = a
-    while b > 100
-      m = a * b
-      if m.to_s.reverse == m.to_s && m > max_palindrome
-        max_palindrome = m
+  while first_factor > 100
+    second_factor = first_factor
+    while second_factor > 100
+      product = first_factor * second_factor
+      if product.to_s.reverse == product.to_s && product > max_palindrome
+        max_palindrome = product
       end
-      b -= 1
+      second_factor -= 1
     end
-    a -= 1
+    first_factor -= 1
   end
   max_palindrome
 end
