@@ -1,10 +1,13 @@
+MIN_PRIME = 2
+
 def prime_factor(num)
-  if num < 2
-    raise ArgumentError.new "Input value lower than 2"
+  if num < MIN_PRIME
+    raise ArgumentError, 'Input value lower than 2'
   end
-  factor = 2
+
+  factor = MIN_PRIME
   while num != 1
-    if num % factor == 0
+    if (num % factor).zero?
       num /= factor
     else
       factor += 1
