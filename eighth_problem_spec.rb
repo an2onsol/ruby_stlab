@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'ruby_stlab/lem'
+require_relative 'eighth_problem'
 
 describe '#largest_product' do
   it 'should return right values' do
